@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="SimpleCalculator">
+        <lightning-layout>
+        <lightning-layout-item size="4">
+        <div class="data">
+          <lightning-input type="number" label="Enter your FirstNumber" onchange={firstNumber}></lightning-input>
+          <lightning-input type="number" label="Enter your SecondNumber" onchange={secondNumber}></lightning-input>
+          <p>Result:{result}</p>
+        </div>
+        <div class="resultdata">
+        <lightning-button label="ADDITION" onclick={addme}></lightning-button>
+        <lightning-button label="MULTIPLICATION" onclick={mul}></lightning-button>
+        <lightning-button label="SUBRATION" onclick={sub}></lightning-button>
+        <lightning-button label="DIVISION" onclick={divsion}></lightning-button>
+        </div>
+        </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+</template>

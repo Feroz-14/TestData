@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="LwcSearch">
+     <lightning-input label="EnteryourText" type="search" onchange={searchme}></lightning-input>
+     <template if:true={account.data}>
+     <template for:each={account.data} for:item="acc">
+    <p key={acc.id}>{acc.Name}</p>
+     </template>
+     </template>
+     <template if:true={account.error}>
+        error :{error}
+        </template>
+    </lightning-card>
+</template>

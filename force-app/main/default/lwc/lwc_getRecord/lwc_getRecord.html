@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="GETRECARD-DETAILS">
+        <template if:true={account.data}>
+            ACCOUNT-NAME  :{name}
+            ACCOUNT-PHONE  :{phone}
+            ACCOUNT-INDUSTRY :{industry}
+            ACCOUNT-RATING :{rating}
+            </template>
+            <template if:true={account.error}>
+
+            </template>
+        </lightning-card>
+</template>

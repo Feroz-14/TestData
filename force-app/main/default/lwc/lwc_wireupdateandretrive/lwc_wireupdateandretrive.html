@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="LightningRecordWire">
+        <template if:true={contact.data}>
+            <lightning-datatable key-field="Id"
+                                 data={contact.data}
+                                 columns={col}
+                                 draft-values={draftvalues}
+                                 onsave={handlesave}
+                                 hide-checkbox-column
+                                 >
+        </lightning-datatable>
+        </template>
+        <template if:true={contact.error}>
+
+        </template>
+        </lightning-card> 
+</template>

@@ -1,0 +1,14 @@
+<template>
+    <lightning-layout>
+    <lightning-layout-item size="4">
+    <lightning-card title="CreateRecord">
+        <lightning-input label="AccountName" type="text" onchange={name}></lightning-input>
+        <lightning-input label="AccountPhone" type="text" onchange={phone}></lightning-input>
+        <lightning-input label="AccountIndustry" type="text" onchange={industry}></lightning-input>
+        <lightning-input label="AccountRating" type="text" onchange={rating}></lightning-input>
+        <br>
+        <lightning-button label="Submit" onclick={callme}></lightning-button>
+        </lightning-card>
+    </lightning-layout-item>
+    </lightning-layout>
+</template>

@@ -1,0 +1,7 @@
+<template>
+    <lightning-card title="ParentComponent">
+        <h1>These Is ParentComponent</h1>
+        <lightning-input label="Name" onchange={callme} value ={name}></lightning-input>
+        <c-lwc_childcomponentcomm parent-name={name}></c-lwc_childcomponentcomm>
+    </lightning-card>
+</template>
